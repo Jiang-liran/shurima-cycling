@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="theme-color" content="#f5f2e9">
-  <title>鹈鹕、雷克顿和内瑟斯 · 一起骑行</title>
+  <title>恕瑞玛四人组 · 一起骑行</title>
   <style>
     :root{color-scheme:light;--ink:#253f42;--muted:#6b7974;--paper:#f5f2e9;--coral:#d86b4c;--line:#dcded2}
     *{box-sizing:border-box}
@@ -55,6 +55,8 @@
     .mobile-detail{display:none}
     @media(max-width:600px){.mobile-detail{display:block}.scene{height:780px}.art{height:680px}.scene-stamp{letter-spacing:.7px}.footer{flex-wrap:wrap;row-gap:8px}}
     @media(max-width:370px){.scene{height:700px}.art{height:580px}}
+    .rider-name{fill:#506b62;stroke:none;font-size:24px;font-weight:500;letter-spacing:3px;text-anchor:middle}
+    @media(max-width:600px){.rider-name{font-size:40px;letter-spacing:2px}.scene{height:auto;padding-top:184px}.art{position:static;height:auto;aspect-ratio:830/1940}.brand-name{letter-spacing:2px}.brand-sub{letter-spacing:1.3px}}
   </style>
 </head>
 <body>
@@ -62,18 +64,22 @@
     <header class="masthead">
       <div class="brand">
         <svg class="brand-icon" viewBox="0 0 40 40" aria-hidden="true"><circle cx="20" cy="20" r="19" fill="none" stroke="#253f42" stroke-width="1.2"/><g fill="none" stroke="#253f42" stroke-linecap="round" stroke-linejoin="round"><circle cx="10" cy="25" r="6" stroke-width="1.5"/><circle cx="30" cy="25" r="6" stroke-width="1.5"/><path d="m10 25 7-12 5 12H10l15-9 5 9m-5-9-2-6h-4m-5 3h6" stroke-width="1.5"/></g></svg>
-        <div><div class="brand-name">好友漫游</div><div class="brand-sub">BETTER TOGETHER</div></div>
+        <div><div class="brand-name">恕瑞玛漫游</div><div class="brand-sub">SHURIMA CYCLING CLUB</div></div>
       </div>
-      <div class="masthead-note">鹈鹕 × 雷克顿 × 内瑟斯 · 海岸三人行</div>
+      <div class="masthead-note">雷克顿 · 内瑟斯 · 阿兹尔 · 泽拉斯</div>
     </header>
 
-    <section class="scene" aria-label="鹈鹕、雷克顿和内瑟斯一起沿海岸骑自行车的二维动画">
-      <div class="scene-heading"><div class="eyebrow">英雄骑行 · 05</div><h1>一起骑，<br>慢慢逛。</h1><p class="subtitle">好天气，好朋友，一路好心情。</p></div>
+    <section class="scene" aria-label="雷克顿、内瑟斯、阿兹尔和泽拉斯一起骑自行车的二维动画">
+      <div class="scene-heading"><div class="eyebrow">恕瑞玛四人组 · 06</div><h1>一起骑，<br>慢慢逛。</h1><p class="subtitle">好天气，好朋友，一路好心情。</p></div>
       <div class="scene-stamp"><span></span> BETTER TOGETHER</div>
       <svg id="scene" class="art" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMax meet" role="img" aria-labelledby="art-title art-desc" xmlns="http://www.w3.org/2000/svg">
-        <title id="art-title">鹈鹕、雷克顿和内瑟斯的海岸骑行</title>
-        <desc id="art-desc">鹈鹕与英雄联盟的雷克顿、内瑟斯各骑一辆自行车，沿海岸结伴前进。雷克顿呈橄榄绿色巨鳄形象，穿深色重甲，露着利齿，拥有琥珀色眼睛，背负月牙巨刃。内瑟斯呈深灰色长耳胡狼形象，戴金色头冠，穿金色肩甲与蓝色腰布，拥有蓝色眼睛，背负符文长柄武器。两位英雄采用与原画面一致的简化 SVG 插画风格。三位骑手持续踩踏，六个车轮转动；鹈鹕围巾、雷克顿尾巴和英雄腰布随风摆动。</desc>
+        <title id="art-title">恕瑞玛四人组的海岸骑行</title>
+        <desc id="art-desc">英雄联盟的雷克顿、内瑟斯、阿兹尔和泽拉斯，各骑一辆自行车沿海岸同行。雷克顿穿巨鳄重甲、背月牙巨刃；内瑟斯戴长耳胡狼金冠、背符文长柄武器；阿兹尔戴金色鹰首头盔、穿金甲与紫色披风、背太阳权杖；泽拉斯由蓝色奥术能量与浮动石甲组成，能量核心柔和闪动。四位英雄持续踩踏，八个车轮转动。移动端四人交错排列，所有人物及自行车均可完整查看。</desc>
         <defs>
+          <linearGradient id="azir-gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffdf87"/><stop offset=".45" stop-color="#d6ad51"/><stop offset="1" stop-color="#a57836"/></linearGradient>
+          <linearGradient id="xerath-stone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#84929b"/><stop offset=".5" stop-color="#526676"/><stop offset="1" stop-color="#3b4b60"/></linearGradient>
+          <linearGradient id="xerath-energy" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#479ece"/><stop offset=".5" stop-color="#b5f6ff"/><stop offset="1" stop-color="#54bfe4"/></linearGradient>
+          <filter id="arcane-glow" x="-40%" y="-30%" width="180%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
           <linearGradient id="renekton-steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c1b28a"/><stop offset=".4" stop-color="#777e69"/><stop offset="1" stop-color="#414d43"/></linearGradient>
           <linearGradient id="nasus-gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5dfa0"/><stop offset=".45" stop-color="#c6ac65"/><stop offset="1" stop-color="#857c50"/></linearGradient>
           <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#dfebe4"/><stop offset="1" stop-color="#ecf0db"/></linearGradient>
@@ -87,7 +93,7 @@
         </defs>
 
         <!-- A slow, layered coastal landscape. -->
-        <rect width="1280" height="1680" fill="url(#sky)"/>
+        <rect width="1280" height="2160" fill="url(#sky)"/>
         <circle cx="997" cy="165" r="69" fill="#f2d17e" opacity=".35"/><circle cx="997" cy="165" r="54" fill="#f4d487"/>
         <g id="cloud-1"><use href="#cloud-shape" transform="translate(455 125) scale(1.1)" opacity=".85"/></g>
         <g id="cloud-2"><use href="#cloud-shape" transform="translate(1060 252) scale(1.4)" opacity=".8"/></g>
@@ -107,12 +113,13 @@
         <path d="M0 564c149-28 285-13 420-6 184 13 296-30 468-8s250 4 392-12v182H0Z" fill="#e2ddb3"/>
         <rect x="0" y="554" width="1280" height="166" fill="url(#dune-specks)"/>
         <g id="back-grasses"><g id="back-grass-strip"><use href="#grass" x="97" y="561" transform="rotate(-8 97 561)"/><use href="#grass" x="286" y="557" transform="scale(.7) translate(122 238)"/><use href="#grass" x="946" y="555"/><use href="#grass" x="1184" y="553" transform="rotate(12 1184 553)"/></g><use href="#back-grass-strip" x="1450"/></g>
-        <path d="M0 609q280-16 599-2t681-3V1680H0Z" fill="#c9c29e"/>
+        <path d="M0 609q280-16 599-2t681-3V2160H0Z" fill="#c9c29e"/>
         <path d="M0 609q280-16 599-2t681-3" fill="none" stroke="#ede5c1" stroke-width="5"/>
         <rect id="road-texture" x="-300" y="617" width="1900" height="80" fill="url(#road-marks)"/>
         <rect id="mobile-road-texture" class="mobile-detail" x="-300" y="897" width="1900" height="80" fill="url(#road-marks)"/>
         <rect id="mobile-road-texture-bottom" class="mobile-detail" x="-300" y="1430" width="1900" height="80" fill="url(#road-marks)"/>
-        <g id="croc-placement" transform="translate(-125 212) scale(.65)">
+        <rect id="mobile-road-texture-last" class="mobile-detail" x="-300" y="1950" width="1900" height="80" fill="url(#road-marks)"/>
+        <g id="croc-placement" transform="translate(-112 298) scale(.52)">
         <ellipse id="croc-bike-shadow" cx="603" cy="648" rx="255" ry="14" fill="#6b795e" opacity=".15"/>
 
         <!-- Bicycle. Wheels stay on the road while the rider gently bobs. -->
@@ -199,8 +206,9 @@
           <path d="m673 344 2 9m6-10 2 9" stroke="#465b43" stroke-width="2"/>
           <path d="m674 352 4-6 3 7m2-1 4-6 3 6" fill="#e7d7ad" stroke="none"/>
         </g>
+        <text class="rider-name" x="603" y="695">雷克顿</text>
         </g>
-        <g id="dog-placement" transform="translate(240 225) scale(.65)">
+        <g id="dog-placement" transform="translate(186 308) scale(.52)">
         <ellipse id="dog-bike-shadow" cx="603" cy="648" rx="255" ry="14" fill="#6b795e" opacity=".15"/>
 
         <!-- Bicycle. Wheels stay on the road while the rider gently bobs. -->
@@ -289,8 +297,9 @@
           <path d="m642 334 10 3 1 8-9-1Z" fill="#73d9dc" stroke-width="2"/>
           <path d="m674 342 2 10m6-10 2 9" stroke="#b9c3b0" stroke-width="2"/>
         </g>
+        <text class="rider-name" x="603" y="695">内瑟斯</text>
         </g>
-        <g id="pel-placement" transform="translate(605 238) scale(.65)">
+        <g id="pel-placement" transform="translate(484 318) scale(.52)">
         <ellipse id="pel-bike-shadow" cx="603" cy="648" rx="255" ry="14" fill="#6b795e" opacity=".15"/>
 
         <!-- Bicycle. Wheels stay on the road while the rider gently bobs. -->
@@ -300,11 +309,11 @@
           <g transform="translate(770 550)"><g id="pel-front-spokes"><use href="#wheel-spokes"/></g></g>
           <g fill="none" stroke="#95a494" stroke-width="4"><path d="M344 531a98 98 0 0 1 186-21"/><path d="M681 509a98 98 0 0 1 183 15"/></g>
           <path d="m440 550 34-100m296 100 61-76" fill="none" stroke="#6d8980" stroke-width="2"/>
-          <g id="pel-far-crank"><path id="pel-far-crank-arm" d="M580 540 547 540" fill="none" stroke="#76918a" stroke-width="6"/><path id="pel-far-leg" d="M540 406Q505 450 547 534" fill="none" stroke="#b88443" stroke-width="12"/><g id="pel-far-foot"><path d="M-12-5Q-5-14 4-11L22-5Q26 1 17 2H-10Z" fill="#cb994e" stroke="#8d7745" stroke-width="2.5"/><path d="M-12 6h34" stroke="#42625e" stroke-width="6"/></g></g>
+          <g id="pel-far-crank"><path id="pel-far-crank-arm" d="M580 540 547 540" fill="none" stroke="#76918a" stroke-width="6"/><path id="pel-far-leg" d="M540 406Q505 450 547 534" fill="none" stroke="#65556b" stroke-width="12"/><g id="pel-far-foot"><path d="M-12-5Q-5-14 4-11L22-5Q26 1 17 2H-10Z" fill="#a18545" stroke="#594b39" stroke-width="2.5"/><path d="M-12 6h34" stroke="#42625e" stroke-width="6"/></g></g>
           <path d="M440 550 540 418 580 540 726 445 540 418M440 550 580 540" fill="none" stroke="#29494a" stroke-width="12"/>
-          <path d="M440 550 540 418 580 540 726 445 540 418M440 550 580 540" fill="none" stroke="#dc7959" stroke-width="7"/>
-          <path d="m575 524-31-101m50 99 119-77" stroke="#efb08a" stroke-width="2" fill="none"/>
-          <path d="m770 550-44-105-8-41" stroke="#29494a" stroke-width="12" fill="none"/><path d="m770 550-44-105-8-41" stroke="#dc7959" stroke-width="7" fill="none"/>
+          <path d="M440 550 540 418 580 540 726 445 540 418M440 550 580 540" fill="none" stroke="#caa047" stroke-width="7"/>
+          <path d="m575 524-31-101m50 99 119-77" stroke="#f3d58b" stroke-width="2" fill="none"/>
+          <path d="m770 550-44-105-8-41" stroke="#29494a" stroke-width="12" fill="none"/><path d="m770 550-44-105-8-41" stroke="#caa047" stroke-width="7" fill="none"/>
           <path d="m540 418-7-26m185 12-15-44q-3-10-14-10h-22" fill="none" stroke="#456560" stroke-width="7"/>
           <path d="M502 390q29-12 59-1 7 4-1 9h-57q-9-3-1-8Z" fill="#34524b" stroke-width="3"/>
           <path d="M668 350h24" stroke="#cda77a" stroke-width="11"/>
@@ -319,42 +328,145 @@
         </g>
 
         <!-- Near leg is articulated to the same crank as both pedals. -->
-        <g class="stroke"><path id="pel-near-crank-arm" d="M580 540 613 540" stroke="#45635e" stroke-width="7"/><path id="pel-near-leg" d="M555 403Q605 446 613 534" fill="none" stroke="#d89b48" stroke-width="13"/><path id="pel-near-leg-highlight" d="M555 403Q605 446 613 534" fill="none" stroke="#edbd69" stroke-width="5"/><g id="pel-near-foot"><path d="M-13-5Q-5-15 4-11L25-5Q29 2 19 3H-11Z" fill="#e8b154" stroke="#98733e" stroke-width="2.5"/><path d="M-13 7h37" stroke="#365752" stroke-width="6"/><path d="M5-5 17-1m-16-3 8 3" stroke="#c28c42" stroke-width="1.5"/></g></g>
+        <g class="stroke"><path id="pel-near-crank-arm" d="M580 540 613 540" stroke="#45635e" stroke-width="7"/><path id="pel-near-leg" d="M555 403Q605 446 613 534" fill="none" stroke="#685762" stroke-width="22"/><path id="pel-near-leg-highlight" d="M555 403Q605 446 613 534" fill="none" stroke="#d1b574" stroke-width="9"/><g id="pel-near-foot"><path d="m-12-27 23-1 7 25-26 6Z" fill="url(#azir-gold)" stroke="#685331" stroke-width="2.5"/><path d="m-4-21 10 0 2 15" fill="none" stroke="#ffdfa0" stroke-width="2"/><path d="M-13-5Q-5-15 4-11L25-5Q29 2 19 3H-11Z" fill="#d9b668" stroke="#685331" stroke-width="2.5"/><path d="M-13 7h37" stroke="#365752" stroke-width="6"/><path d="M5-5 17-1m-16-3 8 3" stroke="#c28c42" stroke-width="1.5"/></g></g>
 
-        <g id="pel-pelican" class="stroke">
-          <!-- Scarf trails behind the bird. -->
-          <path id="pel-scarf-tail" d="M578 299C540 294 531 268 497 282S441 287 422 271L427 294 411 304Q461 324 497 305T575 320Z" fill="#db7959" stroke-width="3"/>
-          <path id="pel-scarf-line" d="M567 306Q530 282 499 294T433 293" fill="none" stroke="#efaa7f" stroke-width="3"/>
-          <!-- Tail and plump body. -->
-          <path d="m459 345-56-18q-4 12 10 28l-25-6q7 20 45 31Z" fill="#e0e4d5" stroke-width="3.5"/>
-          <path d="M458 314C481 296 516 303 541 293 560 285 564 260 563 239 559 215 563 193 583 185 605 176 626 190 627 211 628 232 607 248 611 277 613 301 622 322 610 350 592 392 554 413 510 407 462 400 421 370 431 341 435 328 446 320 458 314Z" fill="#fcf8e9"/>
-          <path d="M599 226c-11 19-9 43-3 66 10 37-11 80-52 96-37 14-76-6-98-24 16 27 42 41 69 42 49 4 85-24 96-58 10-25 1-49-3-71-3-20 14-40 16-53Z" fill="#e7e8d7" stroke="none"/>
-          <path d="M453 336c22-12 64-7 99 21-21 28-68 30-94 4-6-6-9-16-5-25Z" fill="#e5e8d9" stroke-width="3"/>
-          <path d="M460 340q31 1 59 17m-52-6q18 5 32 13" fill="none" stroke="#bcc9bc" stroke-width="2.5"/>
-          <!-- A smaller front wing reaches naturally toward the handlebar. -->
-          <path d="M576 311Q593 329 627 335L675 340Q690 341 685 350 682 356 666 353L618 350Q584 348 567 333" fill="#faf6e8" stroke-width="3.5"/>
-          <path d="m666 341 1 11m8-9 1 9" stroke="#c4ccba" stroke-width="2"/>
-          <!-- Bill and deep throat pouch give a clear pelican silhouette. -->
-          <path d="M608 214 786 230Q778 245 748 254 699 288 660 285 622 283 607 247Z" fill="#efbf70" stroke-width="3.5"/>
-          <path d="M618 235Q669 273 713 260 752 250 775 238 717 282 672 285 636 287 618 257Z" fill="#e8aa62" stroke="none"/>
-          <path d="M608 212Q659 209 708 217L789 231Q796 233 786 241L610 233Z" fill="#f6d383" stroke-width="3.5"/>
-          <path d="m625 224 143 10" fill="none" stroke="#c78e47" stroke-width="2"/>
-          <path d="m786 232 3 7" stroke="#be833d" stroke-width="2"/>
-          <path d="M631 244q13 22 31 28" fill="none" stroke="#f7d590" stroke-width="3"/>
-          <ellipse cx="600" cy="220" rx="12" ry="10" fill="#edc5a0" stroke="none" opacity=".6"/>
-          <g id="pel-eye-open"><circle cx="599" cy="207" r="5.1" fill="#29494a" stroke="none"/><circle cx="600.5" cy="205.5" r="1.5" fill="#fffaf0" stroke="none"/></g>
-          <path id="pel-eye-closed" d="M594 208q5 4 10 0" fill="none" stroke-width="2.5" visibility="hidden"/>
-          <path d="M592 195q5-4 10-1" fill="none" stroke-width="2.5"/>
-          <!-- A soft green cycling cap. -->
-          <path d="M559 185q0-26 28-27 26 0 31 24Z" fill="#73958b" stroke-width="3"/><path d="M586 160q-10 10-8 24" fill="none" stroke="#a8beb0" stroke-width="2.5"/><path d="M554 184q32-5 65-2l17 5q3 4-3 5l-74-1q-9-1-5-7Z" fill="#547b70" stroke-width="3"/><circle cx="586" cy="157" r="4" fill="#547b70" stroke-width="2"/>
-          <path d="M563 291q24 14 48-2l5 18q-28 17-57 0Z" fill="#dc7959" stroke-width="3"/><path d="M567 298q20 11 39 0" stroke="#efa883" fill="none" stroke-width="2"/>
-          <path d="M565 304q-15-9-18 4-1 11 14 12l8-8Z" fill="#c9634b" stroke-width="2.5"/>
+        <g id="pel-azir" class="stroke" style="stroke:#544936">
+          <title>阿兹尔 · 沙漠皇帝</title>
+          <!-- The sun-and-eagle staff is carried upright behind the emperor. -->
+          <g id="azir-staff">
+            <path d="m440 411 38-251" fill="none" stroke="#584b39" stroke-width="13"/><path d="m440 411 38-251" fill="none" stroke="#d9ae57" stroke-width="7"/>
+            <path d="m448 349 4-22m13-92 3-20" stroke="#f6d98d" stroke-width="10"/>
+            <path d="M473 164 447 145 438 106 461 125 473 87 490 128 519 103 510 149 487 170Z" fill="url(#azir-gold)" stroke-width="3.5"/>
+            <path d="m445 122 14 19 14-38 15 40 23-24" fill="none" stroke="#ffe4a0" stroke-width="3"/>
+            <path d="M469 162 440 158 422 143 425 173 451 190 476 184 499 195 526 179 532 150 509 165 486 163Z" fill="url(#azir-gold)" stroke-width="3.5"/>
+            <path d="m434 166 15 8 12-1m32 3 12 5 14-11" fill="none" stroke="#846438" stroke-width="3"/>
+            <path d="m472 151 14 12-13 18-13-15Z" fill="#4aa2ab" stroke-width="3"/><path d="m474 155 6 8-7 10-6-8Z" fill="#9be0d2" stroke="none"/>
+          </g>
+          <path id="pel-cape" d="M550 273Q505 289 472 282L423 298 439 340Q480 365 531 337L565 308Z" fill="#64436f" stroke-width="3.5"/>
+          <path id="pel-cloth" d="M532 359Q487 347 462 367T413 375L424 397Q474 412 527 384Z" fill="#69466f" stroke-width="3"/>
+          <!-- Layered ceremonial armor over a dark undersuit. -->
+          <path d="M551 262C521 274 493 291 490 321 484 359 502 394 533 405 567 415 598 398 615 372 630 347 615 299 607 270Z" fill="#3d4650" stroke-width="4"/>
+          <path d="M535 287 570 280 605 296 616 329 598 353 563 365 534 350 519 317Z" fill="url(#azir-gold)" stroke-width="3.5"/>
+          <path d="m548 291 6 23 17 13 28-17m-59 34 25-5 24 8m-22-18-2 25" fill="none" stroke="#9c783f" stroke-width="3"/>
+          <path d="m570 288 13 5-2 19-13 7-9-18Z" fill="#40959e" stroke-width="3"/><path d="m570 294 7 3-1 10-7 4-4-10Z" fill="#a6e3d0" stroke="none"/>
+          <path d="M501 354 528 348 548 371 530 394 504 384 494 370Z" fill="url(#azir-gold)" stroke-width="3"/>
+          <ellipse cx="519" cy="368" rx="12" ry="15" transform="rotate(-20 519 368)" fill="#3b9497" stroke-width="3"/>
+          <path d="M534 362 561 372 604 354 616 377 574 397 538 393 523 379Z" fill="url(#azir-gold)" stroke-width="3"/>
+          <path d="m545 390 54-7 10 44-28-8-22 16-25-13Z" fill="#5d426e" stroke-width="3"/>
+          <path d="m549 397 7 23 11 6 11-13 14-2 2-21" fill="none" stroke="#d2af62" stroke-width="3"/>
+          <!-- A long, pointed golden eagle crown replaces the pelican silhouette. -->
+          <path d="M547 214 551 184 578 165 611 176 634 202 630 240 616 272 585 288 558 266Z" fill="#353d43" stroke-width="4"/>
+          <path d="M556 193 551 159 577 115 592 165 613 151 628 181 630 205 607 192 589 204 574 228Z" fill="url(#azir-gold)" stroke-width="3.5"/>
+          <path d="m559 167 18-35 9 35-13 30m18-31 15 17 14-2" fill="none" stroke="#ffdf83" stroke-width="3"/>
+          <path d="m560 192 19 19-7 39 16 31-25-14-16-33Z" fill="url(#azir-gold)" stroke-width="3"/>
+          <path d="m557 217 9 19-2 20m8-46-5 18" fill="none" stroke="#9e723b" stroke-width="3"/>
+          <path d="M590 202 619 195 641 215 671 225 683 239 674 264 659 247 634 240 615 226 588 223Z" fill="url(#azir-gold)" stroke-width="3.5"/>
+          <path d="m622 212 12 15 32 11 8 16m-40-16 26 5" fill="none" stroke="#8e6936" stroke-width="3"/>
+          <path d="m593 210 26-5-6 16-19 4Z" fill="#302f2f" stroke-width="2"/>
+          <g id="pel-eye-open" stroke="none"><path d="m596 215 19-5-6 10-13 2Z" fill="#75dce0"/><path d="m598 216 11-3-4 6-7 1Z" fill="#e2ffff"/></g>
+          <path id="pel-eye-closed" d="m596 219 16-4" fill="none" stroke="#a9e4db" stroke-width="2.5" visibility="hidden"/>
+          <path d="m593 202 27-6 8 7-37 8Z" fill="#dfb554" stroke-width="2"/>
+          <path d="M582 256 600 267 619 250 626 272 605 297 583 286 573 271Z" fill="url(#azir-gold)" stroke-width="3"/>
+          <path d="m592 271 12 10 12-13" fill="none" stroke="#9c793f" stroke-width="3"/>
+          <!-- Broad wing-like pauldrons, purple collar, and gold gauntlets. -->
+          <path d="M492 288 510 265 539 274 560 293 547 312 516 312 488 301Z" fill="url(#azir-gold)" stroke-width="3.5"/>
+          <path d="m497 287 21 10 31-1m-43-21 16 11 27 3" fill="none" stroke="#f6d88b" stroke-width="3"/>
+          <path d="M546 278 571 289 610 273 619 288 581 310 548 300Z" fill="#6a416e" stroke-width="3"/>
+          <path d="M573 294 592 275 622 279 647 302 632 327 603 334 579 315Z" fill="url(#azir-gold)" stroke-width="3.5"/>
+          <path d="m586 295 24 11 25-7m-45 8 18 10 20-8" fill="none" stroke="#ffe3a0" stroke-width="3"/>
+          <path d="m619 326 24 7 25 4q17-1 23 8-1 10-16 9l-23-4-32-6-10-9Z" fill="#424b54" stroke-width="3"/>
+          <path d="m635 328 27 7 2 20-27-5-11-12Z" fill="url(#azir-gold)" stroke-width="3"/>
+          <path d="m644 333 8 5 1 10m22-7 1 11m7-10 1 10" fill="none" stroke="#b08b45" stroke-width="2"/>
         </g>
+        <text class="rider-name" x="603" y="695">阿兹尔</text>
+        </g>
+        <g id="xer-placement" transform="translate(782 328) scale(.52)">
+        <ellipse id="xer-bike-shadow" cx="603" cy="648" rx="255" ry="14" fill="#6b795e" opacity=".15"/>
+
+        <!-- Bicycle. Wheels stay on the road while the rider gently bobs. -->
+        <g id="xer-bicycle" class="stroke">
+          <g fill="none"><circle cx="440" cy="550" r="91" stroke="#29494a" stroke-width="11"/><circle cx="770" cy="550" r="91" stroke="#29494a" stroke-width="11"/><circle cx="440" cy="550" r="83" stroke="#f2e7c8" stroke-width="5"/><circle cx="770" cy="550" r="83" stroke="#f2e7c8" stroke-width="5"/></g>
+          <g transform="translate(440 550)"><g id="xer-rear-spokes"><use href="#wheel-spokes"/></g></g>
+          <g transform="translate(770 550)"><g id="xer-front-spokes"><use href="#wheel-spokes"/></g></g>
+          <g fill="none" stroke="#95a494" stroke-width="4"><path d="M344 531a98 98 0 0 1 186-21"/><path d="M681 509a98 98 0 0 1 183 15"/></g>
+          <path d="m440 550 34-100m296 100 61-76" fill="none" stroke="#6d8980" stroke-width="2"/>
+          <g id="xer-far-crank"><path id="xer-far-crank-arm" d="M580 540 547 540" fill="none" stroke="#76918a" stroke-width="6"/><path id="xer-far-leg" d="M540 406Q505 450 547 534" fill="none" stroke="#439bbf" stroke-width="20"/><g id="xer-far-foot"><path d="M-12-5Q-5-14 4-11L22-5Q26 1 17 2H-10Z" fill="#566b7d" stroke="#355b77" stroke-width="2.5"/><path d="M-12 6h34" stroke="#42625e" stroke-width="6"/></g></g>
+          <path d="M440 550 540 418 580 540 726 445 540 418M440 550 580 540" fill="none" stroke="#29494a" stroke-width="12"/>
+          <path d="M440 550 540 418 580 540 726 445 540 418M440 550 580 540" fill="none" stroke="#658cb0" stroke-width="7"/>
+          <path d="m575 524-31-101m50 99 119-77" stroke="#b5d4e4" stroke-width="2" fill="none"/>
+          <path d="m770 550-44-105-8-41" stroke="#29494a" stroke-width="12" fill="none"/><path d="m770 550-44-105-8-41" stroke="#658cb0" stroke-width="7" fill="none"/>
+          <path d="m540 418-7-26m185 12-15-44q-3-10-14-10h-22" fill="none" stroke="#456560" stroke-width="7"/>
+          <path d="M502 390q29-12 59-1 7 4-1 9h-57q-9-3-1-8Z" fill="#34524b" stroke-width="3"/>
+          <path d="M668 350h24" stroke="#cda77a" stroke-width="11"/>
+          <path d="m675 346 1 8m6-8 1 8" stroke="#9c805e" stroke-width="1.5"/>
+          <circle cx="703" cy="344" r="7" fill="#e4bd6c" stroke-width="2.5"/>
+          <path d="M440 537 579 523a17 17 0 0 1 0 34l-139 6a13 13 0 0 1 0-26Z" fill="none" stroke="#6c7970" stroke-width="2.5"/>
+          <circle cx="580" cy="540" r="23" fill="#f0e7cd" stroke="#48675e" stroke-width="4"/>
+          <circle cx="580" cy="540" r="16" fill="none" stroke="#8fa295" stroke-width="2" stroke-dasharray="2 5"/>
+          <circle cx="440" cy="550" r="8" fill="#c6d0b7" stroke-width="3"/><circle cx="770" cy="550" r="8" fill="#c6d0b7" stroke-width="3"/>
+          <path d="M390 433h99m-92 0 43 117m44-116 24 35" fill="none" stroke="#5c796c" stroke-width="3.5"/>
+          <path d="M395 415h74q5 0 5 5v12h-84v-12q0-5 5-5Z" fill="#a5b99a" stroke-width="2.5"/><path d="M410 415v17m45-17v17" stroke="#718b6e" stroke-width="3"/>
+        </g>
+
+        <!-- Near leg is articulated to the same crank as both pedals. -->
+        <g class="stroke"><path id="xer-near-crank-arm" d="M580 540 613 540" stroke="#45635e" stroke-width="7"/><path id="xer-near-leg" d="M555 403Q605 446 613 534" fill="none" stroke="#355b77" stroke-width="24"/><path id="xer-near-leg-skin" d="M555 403Q605 446 613 534" fill="none" stroke="#64ccea" stroke-width="18"/><path id="xer-near-leg-highlight" d="M555 403Q605 446 613 534" fill="none" stroke="#d5ffff" stroke-width="6"/><g id="xer-near-foot"><path d="m-13-30 24-2 6 28-27 5Z" fill="url(#xerath-stone)" stroke="#355b77" stroke-width="2.5"/><path d="m-4-23 9-1 3 12-9 2Z" fill="#acfbff" stroke="#355b77" stroke-width="1.5"/><path d="M-13-5Q-5-15 4-11L25-5Q29 2 19 3H-11Z" fill="#60717f" stroke="#355b77" stroke-width="2.5"/><path d="M-13 7h37" stroke="#365752" stroke-width="6"/><path d="m8-4 2 6m7-6 2 5" fill="none" stroke="#d6c697" stroke-width="1.8"/></g></g>
+
+        <g id="xer-xerath" class="stroke" style="stroke:#354e61">
+          <title>泽拉斯 · 远古巫灵</title>
+          <!-- Arcane energy connects the separated pieces of the broken sarcophagus. -->
+          <g id="xer-aura" stroke="none" filter="url(#arcane-glow)" opacity=".7">
+            <path d="M553 194 604 180 631 213 617 252 630 281 613 338 594 384 536 397 509 349 506 301 528 251Z" fill="#59cce9" opacity=".5"/>
+            <ellipse cx="566" cy="306" rx="46" ry="67" fill="#69dff5"/>
+          </g>
+          <path d="M560 217 600 215 617 251 603 272 617 301 595 328 599 354 573 398 542 386 527 347 529 312 520 290 539 255Z" fill="url(#xerath-energy)" stroke="#67cde7" stroke-width="3"/>
+          <path d="M576 241 568 280 586 302 565 326 574 351 561 387" fill="none" stroke="#e3ffff" stroke-width="7"/>
+          <path d="m545 287 13 19-16 28 11 19m38-83-5 18 14 12-12 24" fill="none" stroke="#bbefff" stroke-width="3"/>
+          <g id="xer-core" stroke="#73d7ee" stroke-width="2.5"><path d="m566 277 24 22-23 40-25-29Z" fill="#a6f0ff"/><path d="m566 290 12 11-12 23-11-16Z" fill="#f3ffff" stroke="none"/></g>
+          <!-- Dark stone plates hover independently around the brilliant core. -->
+          <g id="xer-left-plate">
+            <path d="M506 264 530 259 545 280 532 309 507 316 491 293Z" fill="url(#xerath-stone)" stroke-width="4"/>
+            <path d="m507 272 18-4 12 14-10 18-20 7-9-14Z" fill="none" stroke="#8394a0" stroke-width="2.5"/>
+            <path d="m510 273 6 13-10 11m21-17 7 6" fill="none" stroke="#87d7ee" stroke-width="2"/>
+            <path d="M510 327 530 322 546 341 539 374 522 384 505 368 502 343Z" fill="url(#xerath-stone)" stroke-width="3.5"/>
+            <path d="m510 337 14-5 12 13-5 22-11 9-10-13Z" fill="none" stroke="#7f909c" stroke-width="2"/>
+          </g>
+          <g id="xer-right-plate">
+            <path d="M593 259 619 250 641 271 642 296 625 317 600 308 589 285Z" fill="url(#xerath-stone)" stroke-width="4"/>
+            <path d="m601 266 15-8 18 17-1 18-12 16-16-7-8-18Z" fill="none" stroke="#8394a0" stroke-width="2.5"/>
+            <path d="m617 260-5 19 12 6-9 16" fill="none" stroke="#73d8ef" stroke-width="2.5"/>
+            <path d="M594 330 616 323 628 345 619 371 598 389 582 366Z" fill="url(#xerath-stone)" stroke-width="3.5"/>
+            <path d="m600 340 11-6 8 12-9 20-12 11-7-12Z" fill="none" stroke="#8495a0" stroke-width="2"/>
+          </g>
+          <path d="M525 389 548 383 568 399 590 385 614 391 608 413 582 424 555 415 536 426 519 409Z" fill="url(#xerath-stone)" stroke-width="3.5"/>
+          <path d="m532 396 16-5 20 16 24-14 13 3m-48 15 7-9" fill="none" stroke="#6bcfe8" stroke-width="2.5"/>
+          <!-- The floating helm has a cold luminous face instead of a human head. -->
+          <g id="xer-helm">
+            <path d="M554 174 581 160 606 171 626 196 616 232 596 248 567 244 548 217Z" fill="url(#xerath-energy)" stroke="#81dcef" stroke-width="3"/>
+            <path d="M540 187 551 158 574 151 592 160 616 157 638 181 632 207 611 198 598 182 578 185 560 207Z" fill="url(#xerath-stone)" stroke-width="3.5"/>
+            <path d="m550 182 9-17 16-6 18 9 19-3 17 17" fill="none" stroke="#8b9ba7" stroke-width="3"/>
+            <path d="m575 154 2 15 13 7m23-15-6 15 13 11" fill="none" stroke="#79daed" stroke-width="2"/>
+            <path d="M546 211 562 210 570 232 585 244 606 236 614 213 632 215 626 242 608 259 581 260 558 243Z" fill="url(#xerath-stone)" stroke-width="3.5"/>
+            <path d="m556 219 10 21 18 12 20-1 15-12 5-15" fill="none" stroke="#8b9ca7" stroke-width="2.5"/>
+            <g id="xer-eye-open" stroke="none"><path d="m569 207 16 5-6 8-12-7m24-1 21-7-5 11-15 5Z" fill="#e1ffff"/></g>
+            <path id="xer-eye-closed" d="m569 213 12 3m13 0 15-6" fill="none" stroke="#e1ffff" stroke-width="2.5" visibility="hidden"/>
+          </g>
+          <!-- A broken chain hangs from the rear stone binding. -->
+          <g fill="none" stroke="#5b6873" stroke-width="3.5"><ellipse cx="492" cy="305" rx="5" ry="9" transform="rotate(20 492 305)"/><ellipse cx="488" cy="320" rx="5" ry="9" transform="rotate(8 488 320)"/><ellipse cx="487" cy="336" rx="5" ry="9"/><ellipse cx="490" cy="352" rx="5" ry="9" transform="rotate(-15 490 352)"/></g>
+          <!-- Energy forms a forearm and spectral fingers around the grip. -->
+          <path d="m618 315 24 13 26 8q17-1 25 9-1 13-17 10l-22-6-34-10-11-12Z" fill="url(#xerath-energy)" stroke="#66d3ed" stroke-width="3"/>
+          <path d="m628 328 28 11 24 5" fill="none" stroke="#d5ffff" stroke-width="4"/>
+          <path d="m635 322 23 7 5 19-27-5-10-10Z" fill="url(#xerath-stone)" stroke-width="3"/>
+          <path d="m640 328 12 5 2 7" fill="none" stroke="#8da0ad" stroke-width="2"/>
+          <path d="m677 342 1 10m8-8-1 8" stroke="#e1ffff" stroke-width="2.5"/>
+          <g id="xer-fragments" fill="url(#xerath-stone)" stroke-width="2.5"><path d="m511 217 12-7 7 13-10 9-11-7Z"/><path d="m646 244 12 5-2 13-12-3-4-10Z"/><path d="m492 374 10-2 3 12-11 5-7-8Z"/><path d="m611 432 12-5 7 10-8 8-12-5Z"/></g>
+          <path id="xer-arcs" d="m538 241-13 8 6 15m105 42 11 7-7 12m-121 56-11 13 8 9m76-24 8 13-11 9" fill="none" stroke="#9eeeff" stroke-width="3" stroke-linecap="round"/>
+        </g>
+        <text class="rider-name" x="603" y="695">泽拉斯</text>
         </g>
         <g id="wind-lines" fill="none" stroke="#faf8df" stroke-width="3" stroke-linecap="round" opacity=".8"><path d="M70 460h25m-42 15h32m-10 80h20"/></g>
         <g id="foreground-grasses"><g id="front-grass-strip"><use href="#grass" x="156" y="704" transform="rotate(-15 156 704)"/><use href="#grass" x="1084" y="699" transform="rotate(8 1084 699)"/><path d="m1097 700 18-8m-988 12 9-6" stroke="#8d9b70" stroke-width="3" stroke-linecap="round"/></g><use href="#front-grass-strip" x="1500"/></g>
       </svg>
-      <div class="scene-caption">与你同行，风景更好。</div><div class="scene-number">05 / ∞</div>
+      <div class="scene-caption">与你同行，风景更好。</div><div class="scene-number">06 / ∞</div>
     </section>
 
     <section class="controls" aria-label="动画控制">
@@ -364,7 +476,7 @@
       </div>
       <div class="speed-controls"><label class="speed-label" for="speed">骑行速度</label><input id="speed" type="range" min="0.5" max="2" step="0.25" value="1" aria-valuetext="1 倍速度"><output class="speed-value" id="speed-value" for="speed">1.00×</output></div>
     </section>
-    <footer class="footer"><span>三个好朋友 · 三辆单车 · 一路好风景</span><span class="english">Good friends. Great rides.</span></footer>
+    <footer class="footer"><span>四位英雄 · 四辆单车 · 一路好风景</span><span class="english">Good friends. Great rides.</span></footer>
   </main>
   <script>
     (() => {
@@ -379,13 +491,14 @@
       const roadSpeed=178.68;
       const set=(el,key,value)=>el.setAttribute(key,value);
       const translate=(el,x,y=0)=>set(el,'transform',`translate(${x.toFixed(2)} ${y.toFixed(2)})`);
-      const world=Object.fromEntries(['scene','road-texture','mobile-road-texture','mobile-road-texture-bottom','sea-texture','cloud-1','cloud-2','cloud-3','sailboat','wind-lines','bird-a','bird-b','foreground-grasses','back-grasses'].map(id=>[id,byId(id)]));
+      const world=Object.fromEntries(['scene','road-texture','mobile-road-texture','mobile-road-texture-bottom','mobile-road-texture-last','sea-texture','cloud-1','cloud-2','cloud-3','sailboat','wind-lines','bird-a','bird-b','foreground-grasses','back-grasses'].map(id=>[id,byId(id)]));
       const makeRider=(prefix,body,phase)=>({
         prefix, phase, scale:.9, body:byId(prefix+body), placement:byId(prefix+'placement'),
-        parts:Object.fromEntries(['rear-spokes','front-spokes','far-crank-arm','near-crank-arm','far-leg','near-leg','near-leg-highlight','near-leg-skin','far-foot','near-foot','scarf-tail','scarf-line','eye-open','eye-closed','bike-shadow','croc-tail','cloth'].map(id=>[id,byId(prefix+id)]))
+        parts:Object.fromEntries(['rear-spokes','front-spokes','far-crank-arm','near-crank-arm','far-leg','near-leg','near-leg-highlight','near-leg-skin','far-foot','near-foot','scarf-tail','scarf-line','eye-open','eye-closed','bike-shadow','croc-tail','cloth','cape','aura','core','left-plate','right-plate','helm','fragments','arcs'].map(id=>[id,byId(prefix+id)]))
       });
       const crocodile=makeRider('croc-','crocodile',1.2);
-      const pelican=makeRider('pel-','pelican',0);
+      const azir=makeRider('pel-','azir',0);
+      const xerath=makeRider('xer-','xerath',3.8);
       const dog=makeRider('dog-','dog',2.6);
 
       // Each pair of feet remains attached to opposite ends of its own crank.
@@ -415,6 +528,14 @@
         set(p['far-leg'],'d',legPath({x:532,y:400+bob},{x:far.x,y:far.y-7},95,99));
         translate(p['near-foot'],near.x,near.y);translate(p['far-foot'],far.x,far.y);
         const flutter=Math.sin(t*6+r.phase)*7,flutter2=Math.sin(t*6+r.phase-1)*5;
+        if(p.cape)set(p.cape,'d',`M550 273Q505 ${289+flutter2} 472 ${282+flutter}L423 ${298+flutter} 439 ${340+flutter2}Q480 ${365+flutter2} 531 337L565 308Z`);
+        if(p.aura)set(p.aura,'opacity',.58+Math.sin(t*2.4)*.14);
+        if(p.core)set(p.core,'opacity',.83+Math.sin(t*2.4+1)*.15);
+        if(p['left-plate'])translate(p['left-plate'],-2+Math.sin(t*2)*2,Math.cos(t*2)*3);
+        if(p['right-plate'])translate(p['right-plate'],2+Math.sin(t*2+2)*2,Math.cos(t*2+2)*3);
+        if(p.helm)translate(p.helm,0,Math.sin(t*1.8)*3);
+        if(p.fragments)translate(p.fragments,Math.sin(t*1.6)*3,Math.cos(t*1.6)*5);
+        if(p.arcs)set(p.arcs,'opacity',.55+Math.sin(t*3)*.25);
         if(p.cloth)set(p.cloth,'d',`M532 359Q487 ${347+flutter} 462 ${367+flutter2}T413 ${375+flutter2}L424 ${397+flutter2}Q474 ${412+flutter} 527 384Z`);
         if(p['scarf-tail'])set(p['scarf-tail'],'d',`M578 299C540 ${294+flutter2} 531 ${268+flutter} 497 ${282+flutter}S441 ${287-flutter2} 422 ${271-flutter2}L427 ${294-flutter2} 411 ${304-flutter2}Q461 ${324-flutter2} 497 ${305+flutter}T575 320Z`);
         if(p['scarf-line'])set(p['scarf-line'],'d',`M567 306Q530 ${282+flutter} 499 ${294+flutter}T433 ${293-flutter2}`);
@@ -425,10 +546,11 @@
       }
 
       function draw(t){
-        animateRider(crocodile,t);animateRider(dog,t);animateRider(pelican,t);
+        for(const rider of [crocodile,dog,azir,xerath])animateRider(rider,t);
         translate(world['road-texture'],-(t*roadSpeed)%300);
         translate(world['mobile-road-texture'],-(t*roadSpeed)%300);
         translate(world['mobile-road-texture-bottom'],-(t*roadSpeed)%300);
+        translate(world['mobile-road-texture-last'],-(t*roadSpeed)%300);
         translate(world['sea-texture'],-(t*11)%310);
         translate(world['cloud-1'],110-((t*6+110)%1550));
         translate(world['cloud-2'],220-((t*8+220)%1600));
@@ -460,11 +582,12 @@
       }
       function fit(){
         const narrow=mobile.matches;
-        set(world.scene,'viewBox',narrow?'160 90 830 1450':'0 0 1280 720');
-        for(const rider of [crocodile,dog,pelican])rider.scale=narrow?.8:.65;
-        set(crocodile.placement,'transform',narrow?'translate(-25 115) scale(.8)':'translate(-125 212) scale(.65)');
-        set(dog.placement,'transform',narrow?'translate(240 560) scale(.8)':'translate(240 225) scale(.65)');
-        set(pelican.placement,'transform',narrow?'translate(-25 950) scale(.8)':'translate(605 238) scale(.65)');
+        set(world.scene,'viewBox',narrow?'160 90 830 1940':'0 0 1280 720');
+        for(const rider of [crocodile,dog,azir,xerath])rider.scale=narrow?.8:.52;
+        set(crocodile.placement,'transform',narrow?'translate(-25 115) scale(.8)':'translate(-112 298) scale(.52)');
+        set(dog.placement,'transform',narrow?'translate(240 560) scale(.8)':'translate(186 308) scale(.52)');
+        set(azir.placement,'transform',narrow?'translate(-25 995) scale(.8)':'translate(484 318) scale(.52)');
+        set(xerath.placement,'transform',narrow?'translate(240 1415) scale(.8)':'translate(782 328) scale(.52)');
         draw(elapsed);
       }
       button.addEventListener('click',()=>{playing=!playing;syncPlayback();});
