@@ -3,10 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#f5f2e9">
-  <title>恕瑞玛四人组 · 一起骑行</title>
+  <meta name="theme-color" content="#f6efdf">
+  <title>恕瑞玛四人组 · 沙漠骑行</title>
   <style>
-    :root{color-scheme:light;--ink:#253f42;--muted:#6b7974;--paper:#f5f2e9;--coral:#d86b4c;--line:#dcded2}
+    :root{color-scheme:light;--ink:#59452e;--muted:#897457;--paper:#f6efdf;--coral:#d86b4c;--line:#e1d4ba}
     *{box-sizing:border-box}
     body{margin:0;background:var(--paper);color:var(--ink);font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;-webkit-font-smoothing:antialiased}
     button,input{font:inherit}
@@ -19,27 +19,27 @@
     .brand-name{font-weight:650;font-size:19px;letter-spacing:3px}
     .brand-sub{margin-top:4px;font-size:9px;letter-spacing:2.2px}
     .masthead-note{font-size:12px;letter-spacing:2px;color:var(--muted)}
-    .scene{position:relative;overflow:hidden;isolation:isolate;background:#dfebe4;border-radius:14px;aspect-ratio:1280/720}
+    .scene{position:relative;overflow:hidden;isolation:isolate;background:#f3e1bf;border-radius:14px;aspect-ratio:1280/720}
     .art{display:block;width:100%;height:100%}
     .scene-heading{position:absolute;z-index:1;top:48px;left:48px;pointer-events:none}
     .eyebrow{font-size:11px;font-weight:550;letter-spacing:3px;display:flex;align-items:center;gap:10px}
     .eyebrow:before{content:"";display:block;width:23px;height:1px;background:var(--ink)}
     h1{font-weight:500;font-size:clamp(30px,3.8vw,50px);line-height:1.43;letter-spacing:5px;margin:18px 0 13px}
-    .subtitle{font-size:12px;letter-spacing:2px;color:#557472;margin:0}
-    .scene-stamp{position:absolute;right:28px;top:27px;display:flex;gap:8px;align-items:center;color:#506e65;font-size:10px;letter-spacing:1.6px}
-    .scene-stamp span{width:6px;height:6px;background:#6d9178;border-radius:50%}
-    .scene-caption{position:absolute;bottom:21px;left:30px;font-size:10px;letter-spacing:2px;color:#6f7663}
-    .scene-number{position:absolute;right:30px;bottom:19px;font-family:Georgia,serif;font-style:italic;font-size:18px;color:#6c7864}
+    .subtitle{font-size:12px;letter-spacing:2px;color:#8a6b40;margin:0}
+    .scene-stamp{position:absolute;right:28px;top:27px;display:flex;gap:8px;align-items:center;color:#8c6b35;font-size:10px;letter-spacing:1.6px}
+    .scene-stamp span{width:6px;height:6px;background:#b48a3f;border-radius:50%}
+    .scene-caption{position:absolute;bottom:21px;left:30px;font-size:10px;letter-spacing:2px;color:#866c47}
+    .scene-number{position:absolute;right:30px;bottom:19px;font-family:Georgia,serif;font-style:italic;font-size:18px;color:#866a40}
     .controls{display:flex;align-items:center;justify-content:space-between;gap:24px;padding:22px 0;border-bottom:1px solid var(--line)}
     .play-controls{display:flex;align-items:center;gap:13px}
     .play{background:var(--ink);color:#fbfaf2;border:0;border-radius:50%;width:46px;height:46px;display:grid;place-items:center;transition:background .2s,transform .2s;flex-shrink:0}
-    .play:hover{background:#3c6263;transform:translateY(-1px)}
+    .play:hover{background:#80613b;transform:translateY(-1px)}
     .play svg{width:16px;height:16px}
     .control-title{font-size:13px;font-weight:550;letter-spacing:1px}
     .control-note{margin-top:5px;font-size:10px;letter-spacing:1px;color:var(--muted)}
     .speed-controls{display:flex;align-items:center;gap:17px}
     .speed-label{font-size:12px;letter-spacing:1px}
-    input[type=range]{appearance:none;-webkit-appearance:none;width:145px;height:3px;background:#d3dbce;border-radius:2px;cursor:pointer;accent-color:var(--ink)}
+    input[type=range]{appearance:none;-webkit-appearance:none;width:145px;height:3px;background:#ddceb0;border-radius:2px;cursor:pointer;accent-color:var(--ink)}
     input[type=range]::-webkit-slider-thumb{appearance:none;-webkit-appearance:none;width:13px;height:13px;border-radius:50%;background:var(--ink);border:3px solid var(--paper);box-shadow:0 0 0 1px var(--ink)}
     input[type=range]::-moz-range-thumb{width:8px;height:8px;border-radius:50%;background:var(--ink);border:3px solid var(--paper);box-shadow:0 0 0 1px var(--ink)}
     .speed-value{font-size:12px;font-variant-numeric:tabular-nums;min-width:35px}
@@ -55,7 +55,7 @@
     .mobile-detail{display:none}
     @media(max-width:600px){.mobile-detail{display:block}.scene{height:780px}.art{height:680px}.scene-stamp{letter-spacing:.7px}.footer{flex-wrap:wrap;row-gap:8px}}
     @media(max-width:370px){.scene{height:700px}.art{height:580px}}
-    .rider-name{fill:#506b62;stroke:none;font-size:24px;font-weight:500;letter-spacing:3px;text-anchor:middle}
+    .rider-name{fill:#785c34;stroke:none;font-size:24px;font-weight:500;letter-spacing:3px;text-anchor:middle}
     @media(max-width:600px){.rider-name{font-size:40px;letter-spacing:2px}.scene{height:auto;padding-top:184px}.art{position:static;height:auto;aspect-ratio:830/1940}.brand-name{letter-spacing:2px}.brand-sub{letter-spacing:1.3px}}
   </style>
 </head>
@@ -70,11 +70,11 @@
     </header>
 
     <section class="scene" aria-label="雷克顿、内瑟斯、阿兹尔和泽拉斯一起骑自行车的二维动画">
-      <div class="scene-heading"><div class="eyebrow">恕瑞玛四人组 · 06</div><h1>一起骑，<br>慢慢逛。</h1><p class="subtitle">好天气，好朋友，一路好心情。</p></div>
-      <div class="scene-stamp"><span></span> BETTER TOGETHER</div>
+      <div class="scene-heading"><div class="eyebrow">恕瑞玛沙漠 · 07</div><h1>迎着光，<br>穿越沙海。</h1><p class="subtitle">穿过黄沙，向太阳圆盘出发。</p></div>
+      <div class="scene-stamp"><span></span> SHURIMA · DESERT RIDE</div>
       <svg id="scene" class="art" viewBox="0 0 1280 720" preserveAspectRatio="xMidYMax meet" role="img" aria-labelledby="art-title art-desc" xmlns="http://www.w3.org/2000/svg">
-        <title id="art-title">恕瑞玛四人组的海岸骑行</title>
-        <desc id="art-desc">英雄联盟的雷克顿、内瑟斯、阿兹尔和泽拉斯，各骑一辆自行车沿海岸同行。雷克顿穿巨鳄重甲、背月牙巨刃；内瑟斯戴长耳胡狼金冠、背符文长柄武器；阿兹尔戴金色鹰首头盔、穿金甲与紫色披风、背太阳权杖；泽拉斯由蓝色奥术能量与浮动石甲组成，能量核心柔和闪动。四位英雄持续踩踏，八个车轮转动。移动端四人交错排列，所有人物及自行车均可完整查看。</desc>
+        <title id="art-title">太阳圆盘下的恕瑞玛沙漠骑行</title>
+        <desc id="art-desc">英雄联盟的雷克顿、内瑟斯、阿兹尔和泽拉斯，各骑一辆自行车，在恕瑞玛沙漠同行。远处巨大的金色太阳圆盘悬于阶梯神庙之上，古城遗迹与层叠沙丘延伸到天边；近处沙纹、碎石向后移动，车轮带起轻微扬尘。雷克顿穿巨鳄重甲、背月牙巨刃；内瑟斯戴长耳胡狼金冠、背符文长柄武器；阿兹尔戴金色鹰首头盔、穿金甲与紫色披风、背太阳权杖；泽拉斯由蓝色奥术能量与浮动石甲组成，能量核心柔和闪动。四位英雄持续踩踏，八个车轮转动。移动端四人交错排列，所有人物及自行车均可完整查看。</desc>
         <defs>
           <linearGradient id="azir-gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffdf87"/><stop offset=".45" stop-color="#d6ad51"/><stop offset="1" stop-color="#a57836"/></linearGradient>
           <linearGradient id="xerath-stone" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#84929b"/><stop offset=".5" stop-color="#526676"/><stop offset="1" stop-color="#3b4b60"/></linearGradient>
@@ -82,45 +82,100 @@
           <filter id="arcane-glow" x="-40%" y="-30%" width="180%" height="160%"><feGaussianBlur stdDeviation="6"/></filter>
           <linearGradient id="renekton-steel" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#c1b28a"/><stop offset=".4" stop-color="#777e69"/><stop offset="1" stop-color="#414d43"/></linearGradient>
           <linearGradient id="nasus-gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#f5dfa0"/><stop offset=".45" stop-color="#c6ac65"/><stop offset="1" stop-color="#857c50"/></linearGradient>
-          <linearGradient id="sky" x2="0" y2="1"><stop stop-color="#dfebe4"/><stop offset="1" stop-color="#ecf0db"/></linearGradient>
-          <linearGradient id="water" x2="0" y2="1"><stop stop-color="#8bbcb2"/><stop offset="1" stop-color="#b7d1b8"/></linearGradient>
-          <pattern id="sea-lines" width="310" height="60" patternUnits="userSpaceOnUse"><path d="M12 20h64m85 24h92M232 10h27M90 54h30" fill="none" stroke="#e5edcd" stroke-width="2" stroke-linecap="round" opacity=".65"/></pattern>
-          <pattern id="road-marks" width="300" height="80" patternUnits="userSpaceOnUse"><path d="M42 47h110" stroke="#f4e8c3" stroke-width="4" stroke-linecap="round"/><path d="M245 17h15m-20 47h6" stroke="#c2b78e" stroke-width="2" stroke-linecap="round" opacity=".65"/></pattern>
-          <pattern id="dune-specks" width="145" height="70" patternUnits="userSpaceOnUse"><path d="m20 30 4-1m50 18 3 1m45-32 4 1" stroke="#b8bd8c" stroke-width="2" stroke-linecap="round" opacity=".5"/></pattern>
-          <g id="cloud-shape" fill="#f9f8e9"><path d="M0 20C-2 9 13 4 22 9 24-8 52-12 60 6 75-3 90 7 88 18c17-4 26 4 25 11H4C-4 29-7 22 0 20Z"/></g>
-          <g id="grass" fill="none" stroke="#7a8d62" stroke-width="3" stroke-linecap="round"><path d="M0 0Q-2-15-11-24M0 0Q3-22 10-34M0 0Q8-10 19-14"/><path d="M9-30q-5-6 0-11 5 4 0 11" fill="#9ba56f" stroke="none"/></g>
+          <linearGradient id="desert-sky" x1="0" y1="90" x2="0" y2="720" gradientUnits="userSpaceOnUse"><stop stop-color="#f3e1bf"/><stop offset=".6" stop-color="#f2d59e"/><stop offset="1" stop-color="#e3bc7e"/></linearGradient>
+          <linearGradient id="sun-disc-gold" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fbe7a7"/><stop offset=".36" stop-color="#dfb75d"/><stop offset=".7" stop-color="#b7853a"/><stop offset="1" stop-color="#f1cf78"/></linearGradient>
+          <radialGradient id="sun-disc-light"><stop stop-color="#fff8c9" stop-opacity=".86"/><stop offset=".6" stop-color="#ffe19a" stop-opacity=".32"/><stop offset="1" stop-color="#ffe19a" stop-opacity="0"/></radialGradient>
+          <linearGradient id="sun-shaft-fill" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#fff4b6" stop-opacity=".42"/><stop offset="1" stop-color="#ffe6ac" stop-opacity="0"/></linearGradient>
+          <linearGradient id="desert-floor" x1="0" y1="580" x2="0" y2="1100" gradientUnits="userSpaceOnUse"><stop stop-color="#dfbc7d"/><stop offset="1" stop-color="#d2a569"/></linearGradient>
+          <pattern id="sand-ripples" width="300" height="116" patternUnits="userSpaceOnUse"><path d="M-40 27q43-12 89-4m50 39q50-13 112-3m56-32q43-12 89-4M22 100q22-6 42-2m173 8 18-3" fill="none" stroke="#f3d69b" stroke-width="2" stroke-linecap="round" opacity=".55"/><path d="m88 25 3-1m136 64 4-1m-72 13 3-1m125-71 2-1" stroke="#af874d" stroke-width="2" stroke-linecap="round" opacity=".36"/></pattern>
+          <g id="sandstone-fragment"><path d="m-16 0 5-12 19-5 16 13 1 6Z" fill="#ae8250"/><path d="m-11-12 19-5 16 13-21 1Z" fill="#d6ad70"/><path d="m3-3 5-14" stroke="#987344" stroke-width="1.4"/></g>
+          <g id="broken-pillar"><path d="m-16 0 3-52 9-7 4 6 9-10 7 9 3 54Z" fill="#b98952"/><path d="m-5-54 2 54h15l-4-62Z" fill="#d2a46a"/><path d="m-11-39 21-1m-22 24 25-1m-7-24-8 13 5 12" fill="none" stroke="#926c3f" stroke-width="2"/><path d="M-21-4h44v7h-44Z" fill="#a47744"/></g>
           <g id="wheel-spokes" stroke="#6a8580" stroke-width="1.8" opacity=".82"><path d="M-84 0H84M0-84V84M-59.4-59.4 59.4 59.4M-59.4 59.4 59.4-59.4M-77.6-32.1 77.6 32.1M-77.6 32.1 77.6-32.1M-32.1-77.6 32.1 77.6M-32.1 77.6 32.1-77.6"/><path d="M-28-79a84 84 0 0 1 40-4" stroke="#faf6dc" stroke-width="5" stroke-linecap="round"/><rect x="-4" y="-67" width="8" height="16" rx="3" fill="#e8b26a" stroke="none"/></g>
         </defs>
 
-        <!-- A slow, layered coastal landscape. -->
-        <rect width="1280" height="2160" fill="url(#sky)"/>
-        <circle cx="997" cy="165" r="69" fill="#f2d17e" opacity=".35"/><circle cx="997" cy="165" r="54" fill="#f4d487"/>
-        <g id="cloud-1"><use href="#cloud-shape" transform="translate(455 125) scale(1.1)" opacity=".85"/></g>
-        <g id="cloud-2"><use href="#cloud-shape" transform="translate(1060 252) scale(1.4)" opacity=".8"/></g>
-        <g id="cloud-3"><use href="#cloud-shape" transform="translate(180 320) scale(.7)" opacity=".7"/></g>
-        <g id="distant-birds" fill="none" stroke="#72928a" stroke-width="2.2" stroke-linecap="round"><path id="bird-a" d="M838 167q10-9 20 0 10-9 20 0"/><path id="bird-b" d="M885 190q7-6 14 0 7-6 14 0"/></g>
-        <path d="M0 423q105-41 202-16 97-50 203-11 160-28 275 15 194-36 314 0 165-34 286-9v116H0Z" fill="#a6c7b5" opacity=".55"/>
-        <path d="M0 438q85-33 169-19 83-19 150 16 87-17 161 4 128-22 219-5 110-15 197 5 184-18 384-4v100H0Z" fill="#8eb6a4" opacity=".65"/>
-        <path d="M0 443h1280v137H0Z" fill="url(#water)"/>
-        <rect id="sea-texture" x="-310" y="446" width="1900" height="137" fill="url(#sea-lines)"/>
-        <path d="M0 445h1280" stroke="#d4dfbf" stroke-width="2"/>
-        <g id="lighthouse" transform="translate(146 353)">
-          <path d="M-76 90q31-28 61-21 27-16 61 8l35 13Z" fill="#81a28a"/>
-          <path d="m-8 63 6-53h18l7 53Z" fill="#f6f1d9"/><path d="m0 29 1-12h16l1 12Z" fill="#d78665"/><path d="M-3 6H20V15H-3Z" fill="#456c65"/><path d="m-7 6 15-13 15 13Z" fill="#e1986d"/><path d="M5 11h6v9H5Z" fill="#f4d687"/><path d="M7 48h5v15H7Z" fill="#6b8d7c"/><path d="M-11 64H27" stroke="#567b65" stroke-width="3"/>
+        <!-- A golden Shuriman desert and a monumental Sun Disc above the ancient capital. -->
+        <rect width="1280" height="2160" fill="url(#desert-sky)"/>
+        <path d="M0 377 94 339 136 347 216 315 277 331 344 310 395 347 457 339 500 375 577 355 622 388 701 359 775 387 847 350 919 370 999 337 1088 364 1172 332 1280 363V568H0Z" fill="#bda481" opacity=".28"/>
+        <g fill="#c29a65" opacity=".55">
+          <path d="M27 438V407h31v-23h18v-40l9-15 9 15v40h17v54Zm109 0v-46h36v-28h28v17h29v57Zm93 0v-68h26v-24h19v24h28v68Zm104 0v-31h23v-28h32v59Z"/>
+          <path d="M1021 442v-43h27v-36h19v-37l12-19 12 19v37h18v36h28v43Zm124 0v-48h28v-33h30v33h24v48Zm84 0v-24h31v-30h20v54Z"/>
         </g>
-        <g id="sailboat" transform="translate(1093 471)"><path d="M-27 0H29L17 10H-16Z" fill="#597e72"/><path d="M0-68V0" stroke="#648b7c" stroke-width="2"/><path d="M-4-62-4-6H-34Z" fill="#f7f5dd"/><path d="m4-44 28 38H4Z" fill="#e3ebd1"/><path d="M-32 15H36" stroke="#deebcc" stroke-width="2" stroke-linecap="round"/></g>
-        <path d="M0 527C126 496 204 522 311 535S510 552 666 529 915 519 1031 529 1196 512 1280 525V720H0Z" fill="#d4d7a9"/>
-        <path d="M0 564c149-28 285-13 420-6 184 13 296-30 468-8s250 4 392-12v182H0Z" fill="#e2ddb3"/>
-        <rect x="0" y="554" width="1280" height="166" fill="url(#dune-specks)"/>
-        <g id="back-grasses"><g id="back-grass-strip"><use href="#grass" x="97" y="561" transform="rotate(-8 97 561)"/><use href="#grass" x="286" y="557" transform="scale(.7) translate(122 238)"/><use href="#grass" x="946" y="555"/><use href="#grass" x="1184" y="553" transform="rotate(12 1184 553)"/></g><use href="#back-grass-strip" x="1450"/></g>
-        <path d="M0 609q280-16 599-2t681-3V2160H0Z" fill="#c9c29e"/>
-        <path d="M0 609q280-16 599-2t681-3" fill="none" stroke="#ede5c1" stroke-width="5"/>
-        <rect id="road-texture" x="-300" y="617" width="1900" height="80" fill="url(#road-marks)"/>
-        <rect id="mobile-road-texture" class="mobile-detail" x="-300" y="897" width="1900" height="80" fill="url(#road-marks)"/>
-        <rect id="mobile-road-texture-bottom" class="mobile-detail" x="-300" y="1430" width="1900" height="80" fill="url(#road-marks)"/>
-        <rect id="mobile-road-texture-last" class="mobile-detail" x="-300" y="1950" width="1900" height="80" fill="url(#road-marks)"/>
+        <g id="far-dunes">
+          <g id="far-dune-strip"><path d="M0 432Q149 371 301 411 459 464 628 398 778 357 925 407 1061 457 1280 432V574H0Z" fill="#d4ad71"/><path d="M0 432Q149 371 301 411 459 464 628 398 778 357 925 407 1061 457 1280 432" fill="none" stroke="#edd19a" stroke-width="3"/></g><use href="#far-dune-strip" x="1280"/>
+        </g>
+        <g id="sun-monument" transform="translate(866 210)">
+          <title>恕瑞玛太阳圆盘与阶梯神庙</title>
+          <circle id="sun-disc-halo" cy="-2" r="218" fill="url(#sun-disc-light)"/>
+          <path id="sun-shaft" d="M-29-108 29-108 142 272H-142Z" fill="url(#sun-shaft-fill)"/>
+          <!-- Sweeping stone supports and the terraced Ascension platform. -->
+          <path d="M-168 266h336v17h-336Zm23-20h290v20h-290Zm26-21h238v21h-238Z" fill="#b68b50" stroke="#a57940" stroke-width="2"/>
+          <path d="M-168 266h336m-313-20h290m-264-21h238" fill="none" stroke="#e9c88a" stroke-width="4"/>
+          <path d="M-34 111H34L58 226H-58Z" fill="#be9655" stroke="#a67b3e" stroke-width="3"/>
+          <path d="M-15 122h30l15 104h-60Z" fill="#efd18e"/>
+          <path d="M-142 81-121 110C-118 163-93 198-43 219L-58 239C-123 220-154 161-157 103Z" fill="#c59a58" stroke="#aa7f43" stroke-width="3"/>
+          <path d="m-147 101 17 19q9 67 70 105" fill="none" stroke="#edcd8d" stroke-width="4"/>
+          <path d="M142 81 121 110C118 163 93 198 43 219L58 239C123 220 154 161 157 103Z" fill="#b78b4c" stroke="#a1763b" stroke-width="3"/>
+          <path d="m146 102-17 19q-9 66-70 104" fill="none" stroke="#e1b970" stroke-width="4"/>
+          <path d="m-10 195 10-14 10 14 4 31h-28Z" fill="#83653f"/>
+          <path d="m-74 235 7-8h134l7 8m-152 16h156m-180 20h204" fill="none" stroke="#976d36" stroke-width="2"/>
+          <g id="sun-disc">
+            <!-- Twelve embossed rays are cut into the outer gold rim. -->
+            <path d="m-10-131 10-22 10 22Z" transform="rotate(0)" fill="url(#sun-disc-gold)" stroke="#b4863d" stroke-width="2"/>
+            <path d="m-10-131 10-22 10 22Z" transform="rotate(30)" fill="url(#sun-disc-gold)" stroke="#b4863d" stroke-width="2"/>
+            <path d="m-10-131 10-22 10 22Z" transform="rotate(60)" fill="url(#sun-disc-gold)" stroke="#b4863d" stroke-width="2"/>
+            <path d="m-10-131 10-22 10 22Z" transform="rotate(90)" fill="url(#sun-disc-gold)" stroke="#b4863d" stroke-width="2"/>
+            <path d="m-10-131 10-22 10 22Z" transform="rotate(120)" fill="url(#sun-disc-gold)" stroke="#b4863d" stroke-width="2"/>
+            <path d="m-10-131 10-22 10 22Z" transform="rotate(150)" fill="url(#sun-disc-gold)" stroke="#b4863d" stroke-width="2"/>
+            <path d="m-10-131 10-22 10 22Z" transform="rotate(180)" fill="url(#sun-disc-gold)" stroke="#b4863d" stroke-width="2"/>
+            <path d="m-10-131 10-22 10 22Z" transform="rotate(210)" fill="url(#sun-disc-gold)" stroke="#b4863d" stroke-width="2"/>
+            <path d="m-10-131 10-22 10 22Z" transform="rotate(240)" fill="url(#sun-disc-gold)" stroke="#b4863d" stroke-width="2"/>
+            <path d="m-10-131 10-22 10 22Z" transform="rotate(270)" fill="url(#sun-disc-gold)" stroke="#b4863d" stroke-width="2"/>
+            <path d="m-10-131 10-22 10 22Z" transform="rotate(300)" fill="url(#sun-disc-gold)" stroke="#b4863d" stroke-width="2"/>
+            <path d="m-10-131 10-22 10 22Z" transform="rotate(330)" fill="url(#sun-disc-gold)" stroke="#b4863d" stroke-width="2"/>
+            <circle r="132" fill="url(#sun-disc-gold)" stroke="#a97933" stroke-width="5"/>
+            <circle r="123" fill="none" stroke="#ffe2a0" stroke-width="3"/>
+            <circle r="113" fill="#e7c16b" stroke="#a97b36" stroke-width="3"/>
+            <circle r="99" fill="#eecd7d" stroke="#fbe4a1" stroke-width="4"/>
+            <path d="M-4-105V-96H4V-105m-2-8v5" transform="rotate(0)" fill="none" stroke="#ae7f35" stroke-width="2"/>
+            <path d="M-4-105V-96H4V-105m-2-8v5" transform="rotate(30)" fill="none" stroke="#ae7f35" stroke-width="2"/>
+            <path d="M-4-105V-96H4V-105m-2-8v5" transform="rotate(60)" fill="none" stroke="#ae7f35" stroke-width="2"/>
+            <path d="M-4-105V-96H4V-105m-2-8v5" transform="rotate(90)" fill="none" stroke="#ae7f35" stroke-width="2"/>
+            <path d="M-4-105V-96H4V-105m-2-8v5" transform="rotate(120)" fill="none" stroke="#ae7f35" stroke-width="2"/>
+            <path d="M-4-105V-96H4V-105m-2-8v5" transform="rotate(150)" fill="none" stroke="#ae7f35" stroke-width="2"/>
+            <path d="M-4-105V-96H4V-105m-2-8v5" transform="rotate(180)" fill="none" stroke="#ae7f35" stroke-width="2"/>
+            <path d="M-4-105V-96H4V-105m-2-8v5" transform="rotate(210)" fill="none" stroke="#ae7f35" stroke-width="2"/>
+            <path d="M-4-105V-96H4V-105m-2-8v5" transform="rotate(240)" fill="none" stroke="#ae7f35" stroke-width="2"/>
+            <path d="M-4-105V-96H4V-105m-2-8v5" transform="rotate(270)" fill="none" stroke="#ae7f35" stroke-width="2"/>
+            <path d="M-4-105V-96H4V-105m-2-8v5" transform="rotate(300)" fill="none" stroke="#ae7f35" stroke-width="2"/>
+            <path d="M-4-105V-96H4V-105m-2-8v5" transform="rotate(330)" fill="none" stroke="#ae7f35" stroke-width="2"/>
+            <path d="M0-83 18-37 57-58 38-18 82 0 38 18 57 58 18 37 0 83-18 37-57 58-38 18-82 0-38-18-57-58-18-37Z" fill="#b88636" stroke="#f9dda0" stroke-width="3"/>
+            <path d="M0-63 11-24 38-38 24-11 63 0 24 11 38 38 11 24 0 63-11 24-38 38-24 11-63 0-24-11-38-38-11-24Z" fill="#e6ba59"/>
+            <circle r="25" fill="#f7dfa0" stroke="#9f7330" stroke-width="4"/><circle r="15" fill="#fff0b9" stroke="#d2a24a" stroke-width="3"/>
+            <path d="m0-124 6 11-6 8-6-8Zm124 124-11 6-8-6 8-6ZM0 124l-6-11 6-8 6 8Zm-124-124 11-6 8 6-8 6Z" fill="#779f92" stroke="#aa7c36" stroke-width="2"/>
+          </g>
+        </g>
+        <g id="middle-dunes">
+          <g id="middle-dune-strip"><path d="M0 491Q122 443 267 477 416 520 582 479 750 436 900 476 1079 521 1280 491V625H0Z" fill="#e7c58a"/><path d="M0 491Q122 443 267 477 416 520 582 479 750 436 900 476 1079 521 1280 491" fill="none" stroke="#f7dda4" stroke-width="3"/><path d="M190 472q-40 26-124 41m513-32q-72 29-152 35m462-37q72 38 176 40" fill="none" stroke="#d6ae70" stroke-width="2"/></g><use href="#middle-dune-strip" x="1280"/>
+        </g>
+        <!-- Half-buried obelisks and column fragments mark the old desert road. -->
+        <g id="ruins" opacity=".8">
+          <g transform="translate(188 511)"><path d="M-25 0-19-85-3-112 12-88 20 0Z" fill="#b98950" stroke="#aa7b42" stroke-width="2"/><path d="M-3-112 12-88 20 0H-2Z" fill="#cda568"/><path d="m-12-62 8-8 9 8-9 9Zm-3 22h20m-18 9h16" fill="none" stroke="#8f6639" stroke-width="2"/><path d="M-33-5h62v9h-62Z" fill="#a77943"/></g>
+          <use href="#broken-pillar" transform="translate(303 526) rotate(12) scale(.75)"/>
+          <g transform="translate(1110 510)"><use href="#broken-pillar"/><use href="#broken-pillar" transform="translate(70 9) scale(.75)"/><path d="m-15-60 68 8 9 15-80-8Z" fill="#c09358"/><path d="m-12-57 61 8" stroke="#e2bc7e" stroke-width="3"/></g>
+          <use href="#sandstone-fragment" transform="translate(1003 532) scale(1.4)"/>
+        </g>
+        <path d="M0 561Q182 526 344 555 526 588 714 552 950 517 1280 554V2160H0Z" fill="#e4c18a"/>
+        <path d="M0 605Q230 579 465 601 758 623 1022 594 1152 583 1280 599V2160H0Z" fill="url(#desert-floor)"/>
+        <path d="M0 605Q230 579 465 601 758 623 1022 594 1152 583 1280 599" fill="none" stroke="#f2d49a" stroke-width="3"/>
+        <rect id="ground-texture" x="-300" y="592" width="1900" height="1568" fill="url(#sand-ripples)"/>
+        <g class="mobile-detail" opacity=".4" fill="none" stroke="#f4d89f" stroke-width="4"><path d="M0 858q124-45 257-10m652 255q145-60 371-20M0 1407q150-41 275-1m660 293q157-40 345-5"/></g>
+        <g id="near-rocks">
+          <g id="rock-strip"><use href="#sandstone-fragment" transform="translate(77 699) scale(.6)"/><use href="#sandstone-fragment" transform="translate(738 713) scale(.65)"/><use href="#sandstone-fragment" transform="translate(1187 694) scale(.45)"/></g><use href="#rock-strip" x="1500"/>
+        </g>
+        <g id="blowing-sand" fill="none" stroke="#fff0c3" stroke-linecap="round" opacity=".5"><path d="M33 540q54-8 107-1m127 19q45-7 89-2m381-21q63-9 118 2m192 20q56-8 106-2" stroke-width="2"/><path d="m184 520 4-1m406 29 4-1m417-25 4 1m183 44 5-1" stroke-width="3"/></g>
         <g id="croc-placement" transform="translate(-112 298) scale(.52)">
-        <ellipse id="croc-bike-shadow" cx="603" cy="648" rx="255" ry="14" fill="#6b795e" opacity=".15"/>
+        <g id="croc-dust-trail" fill="#f7d798" stroke="none" opacity=".42"><ellipse cx="305" cy="640" rx="36" ry="8"/><ellipse cx="326" cy="632" rx="24" ry="8"/><circle cx="297" cy="624" r="3"/><circle cx="280" cy="635" r="2"/><circle cx="317" cy="615" r="2"/></g>
+        <ellipse id="croc-bike-shadow" cx="603" cy="648" rx="255" ry="14" fill="#8f683c" opacity=".15"/>
 
         <!-- Bicycle. Wheels stay on the road while the rider gently bobs. -->
         <g id="croc-bicycle" class="stroke">
@@ -209,7 +264,8 @@
         <text class="rider-name" x="603" y="695">雷克顿</text>
         </g>
         <g id="dog-placement" transform="translate(186 308) scale(.52)">
-        <ellipse id="dog-bike-shadow" cx="603" cy="648" rx="255" ry="14" fill="#6b795e" opacity=".15"/>
+        <g id="dog-dust-trail" fill="#f7d798" stroke="none" opacity=".42"><ellipse cx="305" cy="640" rx="36" ry="8"/><ellipse cx="326" cy="632" rx="24" ry="8"/><circle cx="297" cy="624" r="3"/><circle cx="280" cy="635" r="2"/><circle cx="317" cy="615" r="2"/></g>
+        <ellipse id="dog-bike-shadow" cx="603" cy="648" rx="255" ry="14" fill="#8f683c" opacity=".15"/>
 
         <!-- Bicycle. Wheels stay on the road while the rider gently bobs. -->
         <g id="dog-bicycle" class="stroke">
@@ -300,7 +356,8 @@
         <text class="rider-name" x="603" y="695">内瑟斯</text>
         </g>
         <g id="pel-placement" transform="translate(484 318) scale(.52)">
-        <ellipse id="pel-bike-shadow" cx="603" cy="648" rx="255" ry="14" fill="#6b795e" opacity=".15"/>
+        <g id="pel-dust-trail" fill="#f7d798" stroke="none" opacity=".42"><ellipse cx="305" cy="640" rx="36" ry="8"/><ellipse cx="326" cy="632" rx="24" ry="8"/><circle cx="297" cy="624" r="3"/><circle cx="280" cy="635" r="2"/><circle cx="317" cy="615" r="2"/></g>
+        <ellipse id="pel-bike-shadow" cx="603" cy="648" rx="255" ry="14" fill="#8f683c" opacity=".15"/>
 
         <!-- Bicycle. Wheels stay on the road while the rider gently bobs. -->
         <g id="pel-bicycle" class="stroke">
@@ -381,7 +438,8 @@
         <text class="rider-name" x="603" y="695">阿兹尔</text>
         </g>
         <g id="xer-placement" transform="translate(782 328) scale(.52)">
-        <ellipse id="xer-bike-shadow" cx="603" cy="648" rx="255" ry="14" fill="#6b795e" opacity=".15"/>
+        <g id="xer-dust-trail" fill="#f7d798" stroke="none" opacity=".42"><ellipse cx="305" cy="640" rx="36" ry="8"/><ellipse cx="326" cy="632" rx="24" ry="8"/><circle cx="297" cy="624" r="3"/><circle cx="280" cy="635" r="2"/><circle cx="317" cy="615" r="2"/></g>
+        <ellipse id="xer-bike-shadow" cx="603" cy="648" rx="255" ry="14" fill="#8f683c" opacity=".15"/>
 
         <!-- Bicycle. Wheels stay on the road while the rider gently bobs. -->
         <g id="xer-bicycle" class="stroke">
@@ -463,20 +521,19 @@
         </g>
         <text class="rider-name" x="603" y="695">泽拉斯</text>
         </g>
-        <g id="wind-lines" fill="none" stroke="#faf8df" stroke-width="3" stroke-linecap="round" opacity=".8"><path d="M70 460h25m-42 15h32m-10 80h20"/></g>
-        <g id="foreground-grasses"><g id="front-grass-strip"><use href="#grass" x="156" y="704" transform="rotate(-15 156 704)"/><use href="#grass" x="1084" y="699" transform="rotate(8 1084 699)"/><path d="m1097 700 18-8m-988 12 9-6" stroke="#8d9b70" stroke-width="3" stroke-linecap="round"/></g><use href="#front-grass-strip" x="1500"/></g>
+        <g id="dust-lines" fill="none" stroke="#f9e4b3" stroke-width="2" stroke-linecap="round" opacity=".4"><path d="M15 676q22-7 49-2m465 33q35-8 68-2m341-12q24-6 51-1"/></g>
       </svg>
-      <div class="scene-caption">与你同行，风景更好。</div><div class="scene-number">06 / ∞</div>
+      <div class="scene-caption">太阳圆盘之下，一起向前。</div><div class="scene-number">07 / ∞</div>
     </section>
 
     <section class="controls" aria-label="动画控制">
       <div class="play-controls">
         <button type="button" class="play" id="play-toggle" aria-label="暂停动画" aria-pressed="false"><svg viewBox="0 0 16 16" aria-hidden="true"><g id="pause-icon" fill="currentColor"><rect x="3" y="2" width="3" height="12" rx="1"/><rect x="10" y="2" width="3" height="12" rx="1"/></g><path id="play-icon" d="m4 1 10 7-10 7Z" fill="currentColor" style="display:none"/></svg></button>
-        <div><div class="control-title" id="play-status" role="status" aria-live="polite">一起兜风</div><div class="control-note">和好朋友一起，慢慢向前</div></div>
+        <div><div class="control-title" id="play-status" role="status" aria-live="polite">穿越恕瑞玛</div><div class="control-note">让风沙记住同行的足迹</div></div>
       </div>
       <div class="speed-controls"><label class="speed-label" for="speed">骑行速度</label><input id="speed" type="range" min="0.5" max="2" step="0.25" value="1" aria-valuetext="1 倍速度"><output class="speed-value" id="speed-value" for="speed">1.00×</output></div>
     </section>
-    <footer class="footer"><span>四位英雄 · 四辆单车 · 一路好风景</span><span class="english">Good friends. Great rides.</span></footer>
+    <footer class="footer"><span>四位英雄 · 一片沙海 · 一路同行</span><span class="english">Under the Sun Disc.</span></footer>
   </main>
   <script>
     (() => {
@@ -491,10 +548,10 @@
       const roadSpeed=178.68;
       const set=(el,key,value)=>el.setAttribute(key,value);
       const translate=(el,x,y=0)=>set(el,'transform',`translate(${x.toFixed(2)} ${y.toFixed(2)})`);
-      const world=Object.fromEntries(['scene','road-texture','mobile-road-texture','mobile-road-texture-bottom','mobile-road-texture-last','sea-texture','cloud-1','cloud-2','cloud-3','sailboat','wind-lines','bird-a','bird-b','foreground-grasses','back-grasses'].map(id=>[id,byId(id)]));
+      const world=Object.fromEntries(['scene','sun-monument','sun-disc-halo','sun-shaft','far-dunes','middle-dunes','ground-texture','near-rocks','blowing-sand','dust-lines'].map(id=>[id,byId(id)]));
       const makeRider=(prefix,body,phase)=>({
         prefix, phase, scale:.9, body:byId(prefix+body), placement:byId(prefix+'placement'),
-        parts:Object.fromEntries(['rear-spokes','front-spokes','far-crank-arm','near-crank-arm','far-leg','near-leg','near-leg-highlight','near-leg-skin','far-foot','near-foot','scarf-tail','scarf-line','eye-open','eye-closed','bike-shadow','croc-tail','cloth','cape','aura','core','left-plate','right-plate','helm','fragments','arcs'].map(id=>[id,byId(prefix+id)]))
+        parts:Object.fromEntries(['rear-spokes','front-spokes','far-crank-arm','near-crank-arm','far-leg','near-leg','near-leg-highlight','near-leg-skin','far-foot','near-foot','scarf-tail','scarf-line','eye-open','eye-closed','bike-shadow','croc-tail','cloth','cape','aura','core','left-plate','right-plate','helm','fragments','arcs','dust-trail'].map(id=>[id,byId(prefix+id)]))
       });
       const crocodile=makeRider('croc-','crocodile',1.2);
       const azir=makeRider('pel-','azir',0);
@@ -543,26 +600,21 @@
         set(p['eye-open'],'visibility',blink?'hidden':'visible');
         set(p['eye-closed'],'visibility',blink?'visible':'hidden');
         set(p['bike-shadow'],'rx',255+Math.sin(angle*2)*3);
+        if(p['dust-trail']){translate(p['dust-trail'],-5-Math.sin(t*3+r.phase)*5,Math.sin(t*4+r.phase));set(p['dust-trail'],'opacity',.27+Math.sin(t*3+r.phase)*.09);}
       }
 
       function draw(t){
         for(const rider of [crocodile,dog,azir,xerath])animateRider(rider,t);
-        translate(world['road-texture'],-(t*roadSpeed)%300);
-        translate(world['mobile-road-texture'],-(t*roadSpeed)%300);
-        translate(world['mobile-road-texture-bottom'],-(t*roadSpeed)%300);
-        translate(world['mobile-road-texture-last'],-(t*roadSpeed)%300);
-        translate(world['sea-texture'],-(t*11)%310);
-        translate(world['cloud-1'],110-((t*6+110)%1550));
-        translate(world['cloud-2'],220-((t*8+220)%1600));
-        translate(world['cloud-3'],50-((t*4+50)%1450));
-        set(world.sailboat,'transform',`translate(${1093-Math.sin(t*.04)*95} ${471+Math.sin(t*1.3)*2})`);
-        set(world['wind-lines'],'opacity',.5+Math.sin(t*3)*.25);
-        translate(world['wind-lines'],Math.sin(t*3)*5);
-        const flap=Math.sin(t*2.8)*4;
-        set(world['bird-a'],'d',`M838 ${164+flap}q10 ${-7-flap} 20 3 10 ${-10-flap} 20 -3`);
-        set(world['bird-b'],'d',`M885 ${188-flap*.6}q7 ${-5+flap*.6} 14 2 7 ${-7+flap*.6} 14 -2`);
-        translate(world['foreground-grasses'],-(t*roadSpeed)%1500);
-        translate(world['back-grasses'],-(t*45)%1450);
+        translate(world['ground-texture'],-(t*roadSpeed)%300);
+        translate(world['far-dunes'],-(t*5)%1280);
+        translate(world['middle-dunes'],-(t*15)%1280);
+        translate(world['near-rocks'],-(t*roadSpeed)%1500);
+        translate(world['blowing-sand'],-(t*25)%220);
+        set(world['blowing-sand'],'opacity',.33+Math.sin(t*.8)*.1);
+        set(world['sun-disc-halo'],'opacity',.72+Math.sin(t*.65)*.12);
+        set(world['sun-shaft'],'opacity',.62+Math.sin(t*.65+.6)*.1);
+        translate(world['dust-lines'],-(t*42)%190);
+        set(world['dust-lines'],'opacity',.35+Math.sin(t*1.1)*.1);
       }
       function tick(now){
         frameId=null;
@@ -575,13 +627,14 @@
         button.setAttribute('aria-pressed',String(!playing));
         byId('pause-icon').style.display=playing?'':'none';
         byId('play-icon').style.display=playing?'none':'';
-        byId('play-status').textContent=playing?'一起兜风':'一起停下来，看看海';
+        byId('play-status').textContent=playing?'穿越恕瑞玛':'停下来，看看沙海';
         if(frameId!==null)cancelAnimationFrame(frameId);
         frameId=null;previous=null;
         if(playing&&!document.hidden)frameId=requestAnimationFrame(tick);
       }
       function fit(){
         const narrow=mobile.matches;
+        set(world['sun-monument'],'transform',narrow?'translate(750 242) scale(.84)':'translate(866 210)');
         set(world.scene,'viewBox',narrow?'160 90 830 1940':'0 0 1280 720');
         for(const rider of [crocodile,dog,azir,xerath])rider.scale=narrow?.8:.52;
         set(crocodile.placement,'transform',narrow?'translate(-25 115) scale(.8)':'translate(-112 298) scale(.52)');
